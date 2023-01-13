@@ -96,7 +96,7 @@ function App() {
     <div className="main-div">
       <div className="bg-image"></div>
       <div className="bg-text">
-        <h1>Under Construction</h1>
+        <h1>Under Construction V2</h1>
         {!hasSubscribed ? SubscribeSection(formEmailValue, setFormEmailValue, subscribeSectionSubmitHandler) : ThanksSection()}
       </div>
     </div>
