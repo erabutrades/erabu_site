@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { getCurrentUser, signOut } from './Cognito'
+import { getCurrentUser, signOut } from './utility/Cognito'
 
 class UserStatus extends Component {
   constructor (props) {

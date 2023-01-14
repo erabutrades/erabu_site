@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { createUser, verifyUser } from './Cognito'
+import { createUser, verifyUser } from './utility/Cognito'
 
 class Signup extends Component {
   constructor (props) {
@@ -122,7 +122,7 @@ class Signup extends Component {
             </form>
           ) : (
 
-            <div>Hello</div>
+            <div>A verification email has been sent. Please check your email inbox.</div>
             // <form onSubmit={this.handleVerifySubmit}>
             //   <input
             //     value={this.state.verifyCode}

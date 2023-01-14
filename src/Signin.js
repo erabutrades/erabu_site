@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { authenticateUser } from './Cognito'
+import { authenticateUser } from './utility/Cognito'
 
 class Signin extends Component {
   constructor (props) {

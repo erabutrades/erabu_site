@@ -20,7 +20,6 @@ export const createUser = (givenName, familyName, email, phoneNumber, password, 
     userPool.signUp(email, password, attributeList, null, callback)
 }
 
-
 export const verifyUser = (username, verifyCode, callback) => {
     const userData = {
         Username: username,
@@ -60,7 +59,6 @@ export const signOut = () => {
 export const getCurrentUser = (callback) => {
     const cognitoUser = userPool.getCurrentUser()
     if (!cognitoUser) return false;
-
 
     cognitoUser.getSession((err, session) => {
         if (err) {
