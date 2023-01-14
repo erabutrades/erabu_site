@@ -8,8 +8,9 @@ import Row from 'react-bootstrap/Row';
 import React, { useState } from 'react';
 import axios, * as others from 'axios';
 
-import SignUp from "./SignUp";
-import Login from "./Login";
+import Signup from './Signup'
+import Signin from './Signin'
+import UserStatus from './UserStatus'
 
 
 function SubscribeSection(formEmailValue, setFormEmailValue, subscribeSectionSubmitHandler) {
@@ -101,8 +102,10 @@ function App() {
       <div className="bg-image"></div>
       <div className="bg-text">
         <h1>Under Construction V2</h1>
-        <SignUp/>
-        <Login/>
+        <Signup />
+        <hr />
+        <Signin />
+        <UserStatus />
       </div>
     </div>
   );

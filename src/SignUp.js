@@ -1,54 +1,140 @@
-import React, { useState } from "react";
-import UserPool from "./UserPool";
-import { CognitoUserAttribute } from "amazon-cognito-identity-js";
+import React, { Component } from 'react'
+import { createUser, verifyUser } from './Cognito'
 
-const Signup = () => {
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
+class Signup extends Component {
+  constructor (props) {
+    super(props)
+    this.changeEmail = this.changeEmail.bind(this)
+    this.changePhoneNumber = this.changePhoneNumber.bind(this)
+    this.changeGivenName = this.changeGivenName.bind(this)
+    this.changeFamilyName = this.changeFamilyName.bind(this)
+    this.changePassword = this.changePassword.bind(this)
+    this.handleSignupSubmit = this.handleSignupSubmit.bind(this)
+    this.handleSignupSubmit = this.handleSignupSubmit.bind(this)
 
-    const onSubmit = (event) => {
-        event.preventDefault();
+    //this.changeVerifyCode = this.changeVerifyCode.bind(this)
+    //this.handleVerifySubmit = this.handleVerifySubmit.bind(this)
 
-        let attributeGivenName = new CognitoUserAttribute( { Name:'given_name', Value: "Daniel" });
-        let attributeFamilyName = new CognitoUserAttribute({ Name:'family_name', Value: "Habig"});
-        let attributePhoneNumber = new CognitoUserAttribute({ Name:'phone_number', Value: "+13174485192"});
-        let attributeEmail = new CognitoUserAttribute({ Name:'email', Value: email });
+    this.state = {
+      email: '',
+      password: '',
+      givenName: '',
+      familyName: '',
+      phoneNumber: '',
+     // verifyCode: '',
+      showVerification: false,
+    }
+  }
 
-        let attributeList = [
-            attributeGivenName,
-            attributeFamilyName,
-            attributePhoneNumber,
-            attributeEmail
-        ];
+  changeEmail (e) {
+    this.setState({ email: e.target.value })
+  }
 
-        UserPool.signUp(email, password, attributeList, null, (err, data) => {
-            if (err) {
-                console.error(err);
-            }
-            console.log(data);
+  changePhoneNumber (e) {
+    this.setState({ phoneNumber: e.target.value })
+  }
 
-        });
+  changeGivenName (e) {
+    this.setState({ givenName: e.target.value })
+  }
 
-    };
+  changeFamilyName (e) {
+    this.setState({ familyName: e.target.value })
+  }
 
+  changePassword (e) {
+    this.setState({ password: e.target.value })
+  }
+
+  // changeVerifyCode (e) {
+  //   this.setState({ verifyCode: e.target.value })
+  // }
+
+  handleSignupSubmit (e) {
+    const { givenName, familyName, email, phoneNumber, password } = this.state
+    e.preventDefault()
+    console.log('Entered:', this.state)
+    createUser(givenName, familyName, email, phoneNumber, password, (err, result) => {
+      if (err) {
+        console.log(err)
+        return
+      }
+      console.log(result.user)
+      this.setState({ showVerification: true })
+    })
+  }
+
+  // handleVerifySubmit (e) {
+  //   e.preventDefault()
+  //   verifyUser(this.state.username, this.state.verifyCode, (err, result) => {
+  //     if (err) {
+  //       console.log(err)
+  //       return
+  //     }
+  //     alert(result)
+  //   })
+  // }
+
+  render () {
     return (
-        <div>
-            <form onSubmit={onSubmit}> 
-                <label htmlFor="email">Email</label>
+      <div className="Signup">
+        <h2>Sign Up</h2>
+        {
+          !this.state.showVerification ? (
+            <form onSubmit={this.handleSignupSubmit}>
+              <div>
                 <input
-                    value={email}
-                    onChange={(event) => setEmail(event.target.value)}
-                ></input>
-                <label htmlFor="password">Password</label>
+                  value={this.state.email}
+                  placeholder='Email'
+                  type='email'
+                  onChange={this.changeEmail} />
+              </div>
+              <div>
                 <input
-                    value={password}
-                    onChange={(event) => setPassword(event.target.value)}
-                ></input>
-
-                <button type="submit">Signup</button>
+                  value={this.state.phoneNumber}
+                  placeholder='Phone Number'
+                  type='tel'
+                  onChange={this.changePhoneNumber} />
+              </div>
+              <div>
+                <input
+                  value={this.state.givenName}
+                  placeholder='Given Name'
+                  onChange={this.changeGivenName} />
+              </div>
+              <div>
+                <input
+                  value={this.state.familyName}
+                  placeholder='Family Name'
+                  onChange={this.changeFamilyName} />
+              </div>
+              <div>
+                <input
+                  value={this.state.password}
+                  placeholder='Password'
+                  type='password'
+                  minLength={6}
+                  onChange={this.changePassword} />
+              </div>
+              <div>
+                <button type='submit'>Sign up</button>
+              </div>
             </form>
-        </div>
-    )
-};
+          ) : (
 
-export default Signup;
+            <div>Hello</div>
+            // <form onSubmit={this.handleVerifySubmit}>
+            //   <input
+            //     value={this.state.verifyCode}
+            //     onChange={this.changeVerifyCode}
+            //     placeholder='code' />
+            //   <button type='submit'>Verify</button>
+            // </form>
+          )
+        }
+      </div>
+    )
+  }
+}
+
+export default Signup
