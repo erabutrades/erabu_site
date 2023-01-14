@@ -8,6 +8,10 @@ import Row from 'react-bootstrap/Row';
 import React, { useState } from 'react';
 import axios, * as others from 'axios';
 
+import SignUp from "./SignUp";
+import Login from "./Login";
+
+
 function SubscribeSection(formEmailValue, setFormEmailValue, subscribeSectionSubmitHandler) {
 
   function onInput({ target: { value } }) {
@@ -97,10 +101,14 @@ function App() {
       <div className="bg-image"></div>
       <div className="bg-text">
         <h1>Under Construction V2</h1>
-        {!hasSubscribed ? SubscribeSection(formEmailValue, setFormEmailValue, subscribeSectionSubmitHandler) : ThanksSection()}
+        <SignUp/>
+        <Login/>
       </div>
     </div>
   );
+  //{!hasSubscribed ? SubscribeSection(formEmailValue, setFormEmailValue, subscribeSectionSubmitHandler) : ThanksSection()}
+  
+
 }
 
 export default App;
