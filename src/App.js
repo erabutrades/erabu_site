@@ -8,6 +8,23 @@ import Row from 'react-bootstrap/Row';
 import React, { useState } from 'react';
 import axios, * as others from 'axios';
 
+function validateEmail(email) {
+
+if(typeof(email) != 'string')
+{
+  return false;
+}
+
+  let res = String(email)
+    .toLowerCase()
+    .match(
+      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    );
+
+    return res;
+};
+
+
 function SubscribeSection(formEmailValue, setFormEmailValue, subscribeSectionSubmitHandler) {
 
   function onInput({ target: { value } }) {
@@ -25,7 +42,7 @@ function SubscribeSection(formEmailValue, setFormEmailValue, subscribeSectionSub
 
     {
       let data = { "email": formEmailValue };
-      let endpoint = "https://505u3bdxg5.execute-api.us-east-1.amazonaws.com/construction_site_subscribe_lambda"
+      let endpoint = "https://gw9t58i6ti.execute-api.us-east-1.amazonaws.com/erabu-add-subscription"
 
       axios({
         method: 'post',
@@ -66,7 +83,7 @@ function SubscribeSection(formEmailValue, setFormEmailValue, subscribeSectionSub
             />
           </Col>
           <Col xs="auto">
-            <Button type="submit" className="mb-2">Subscribe</Button>
+            <Button type="submit" className="mb-2" disabled = {!validateEmail(formEmailValue)}>Subscribe</Button>
           </Col>
         </Row>
       </Form>
