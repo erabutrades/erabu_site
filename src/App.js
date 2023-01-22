@@ -1,5 +1,7 @@
 import './App.css';
-import logo from "./logo.png";
+
+import LandingPage from "./LandingPage";
+import OtherPage from "./OtherPage"
 
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
@@ -8,7 +10,49 @@ import Row from 'react-bootstrap/Row';
 
 import React, { useState } from 'react';
 import axios, * as others from 'axios';
-import { logDOM } from '@testing-library/react';
+
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Switch,
+  Redirect,
+  Outlet, Link, useRoutes, useLocation
+} from "react-router-dom";
+
+
+const Layout = () => (
+  <div>
+    <nav>
+      <ul>
+        <li>
+          <Link to="/">Landing</Link>
+        </li>
+        <li>
+          <Link to="/home">Home</Link>
+        </li>
+        <li>
+          <Link to="/signup">Sign Up</Link>
+        </li>
+        <li>
+          <Link to="/login">Login</Link>
+        </li>
+        <li>
+          <Link to="/otherpage">Other Page</Link>
+        </li>
+      </ul>
+    </nav>
+
+    <hr />
+
+    {/* An <Outlet> renders whatever child route is currently active,
+          so you can think about this <Outlet> as a placeholder for
+          the child routes we defined above. */}
+    <Outlet />
+  </div>
+);
+
+
 
 function validateEmail(email) {
 
@@ -102,7 +146,6 @@ function ThanksSection() {
 }
 
 function App() {
-
   const [formEmailValue, setFormEmailValue] = useState();
   const [hasSubscribed, setHasSubscribed] = useState(false);
 
@@ -110,18 +153,24 @@ function App() {
     setHasSubscribed(true);
   }
 
-  return (
-    <div className="main-div">
-      <div className="bg-main">
-        <img className="logo-header" src={logo} alt="logo.png" />
-        <h1>ERABU TRADES</h1>
-      </div>
-      <div className="white-box-text">
-        <h1>Under Construction V2</h1>
-        {!hasSubscribed ? SubscribeSection(formEmailValue, setFormEmailValue, subscribeSectionSubmitHandler) : ThanksSection()}
-      </div>
-    </div >
-  );
+  const home = <LandingPage />;
+
+  const routes = [
+    {
+      path: '/',
+      element: <Layout />,
+      children: [
+        { index: true, element: home }, // The index route defines what should be displayed nn the default route i.e. '/'
+        { path: '/home', element: home },
+        //{ path: '/signup', element: <SignUpPage /> },
+        //{ path: '/login', element: <LoginPage /> },
+        { path: '/otherpage', element: <OtherPage /> },
+        { path: '/*', element: home }
+      ],
+    },
+  ];
+
+  return useRoutes(routes);
 }
 
 export default App;
