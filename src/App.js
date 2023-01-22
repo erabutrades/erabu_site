@@ -1,4 +1,5 @@
 import './App.css';
+import logo from "./logo.png";
 
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
@@ -7,13 +8,13 @@ import Row from 'react-bootstrap/Row';
 
 import React, { useState } from 'react';
 import axios, * as others from 'axios';
+import { logDOM } from '@testing-library/react';
 
 function validateEmail(email) {
 
-if(typeof(email) != 'string')
-{
-  return false;
-}
+  if (typeof (email) != 'string') {
+    return false;
+  }
 
   let res = String(email)
     .toLowerCase()
@@ -21,7 +22,7 @@ if(typeof(email) != 'string')
       /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
     );
 
-    return res;
+  return res;
 };
 
 
@@ -83,7 +84,7 @@ function SubscribeSection(formEmailValue, setFormEmailValue, subscribeSectionSub
             />
           </Col>
           <Col xs="auto">
-            <Button type="submit" className="mb-2" disabled = {!validateEmail(formEmailValue)}>Subscribe</Button>
+            <Button type="submit" className="mb-2" disabled={!validateEmail(formEmailValue)}>Subscribe</Button>
           </Col>
         </Row>
       </Form>
@@ -111,12 +112,15 @@ function App() {
 
   return (
     <div className="main-div">
-      <div className="bg-image"></div>
-      <div className="bg-text">
+      <div className="bg-main">
+        <img className="logo-header" src={logo} alt="logo.png" />
+        <h1>ERABU TRADES</h1>
+      </div>
+      <div className="white-box-text">
         <h1>Under Construction V2</h1>
         {!hasSubscribed ? SubscribeSection(formEmailValue, setFormEmailValue, subscribeSectionSubmitHandler) : ThanksSection()}
       </div>
-    </div>
+    </div >
   );
 }
 
