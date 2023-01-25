@@ -13,6 +13,13 @@
   width: 200px;
 }
 
+.logo-banner {
+  max-width: 502px;
+  max-height: 280px;
+  height: 55%;
+  width: 100%;
+}
+
 
 .bg-image {
   background-image: url("./bg_blur.png");

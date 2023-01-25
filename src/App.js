@@ -56,7 +56,7 @@ function App() {
   const routes = [
     {
       path: '/',
-      element: <Layout />,
+     //element: <Layout />,
       children: [
         { index: true, element: home }, // The index route defines what should be displayed nn the default route i.e. '/'
         { path: '/home', element: home },
