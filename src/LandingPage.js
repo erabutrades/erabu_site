@@ -11,8 +11,7 @@ function LandingPage() {
             <div className="bg-main">
                 <div className="white-box-text">
                     <img className="logo-banner" src={logo_banner} alt="logo_banner.png" />
-                    <p>Trading options shouldn't mean trading away your time.</p>
-                    <p>Reclaim your time with Erabu Trades.</p>
+                    <p>Trade your options, not your time.</p>
                     <SubscribeComponent />
                 </div>
             </div >
