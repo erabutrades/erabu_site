@@ -15,6 +15,7 @@ import {
   BrowserRouter as Router,
   Outlet, Link, useRoutes, useLocation
 } from "react-router-dom";
+import AC_Grandfather from './ac_grandfather';
 
 
 function Layout() {
@@ -27,16 +28,7 @@ function Layout() {
             <Link to="/">Landing</Link>
           </li>
           <li>
-            <Link to="/home">Home</Link>
-          </li>
-          <li>
-            <Link to="/signup">Sign Up</Link>
-          </li>
-          <li>
-            <Link to="/login">Login</Link>
-          </li>
-          <li>
-            <Link to="/otherpage">Other Page</Link>
+            <Link to="/ac_grandfather">AC Grandfather</Link>
           </li>
         </ul>
       </nav>
@@ -62,7 +54,7 @@ function App() {
         { path: '/home', element: home },
         //{ path: '/signup', element: <SignUpPage /> },
         //{ path: '/login', element: <LoginPage /> },
-        { path: '/otherpage', element: <OtherPage /> },
+        { path: '/ac_grandfather', element: <AC_Grandfather /> },
         { path: '/*', element: home }
       ],
     },
