@@ -12,8 +12,9 @@ function LandingPage() {
         <div className="main-div">
             <div className="bg-main">
                 <div className="white-box-text">
-                    <BannerHome/>
-                    <p>Trade your options, not your time.</p>
+                    <BannerHome />
+                    <h4>Trade your options, not your time.</h4>
+                    <br />
                     <SubscribeComponent />
                 </div>
             </div >

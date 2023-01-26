@@ -22,57 +22,64 @@ function AC_Grandfather() {
                 <div className="white-box-text-long">
                     <br />
                     <br />
-                    <h1 className="text-impact">My Grandfather built his <b>legacy</b> through options trading.</h1>
                     <br />
-                    <h3>He spent his retirement glued to the computer, watching and waiting.</h3>
+                    <h1 className="text-impact">My Grandfather built his financial <b>legacy</b> through options trading.</h1>
+                    <br />
+                    <h3>He was <i>disciplined</i>, <i>smart</i>, and <i>full of heart</i>.</h3>
+                    <br />
+                    <h3>His retirement was consumed, glued to the computer, watching and waiting.</h3>
                     <br />
                     <h3><b>Waiting</b> for the perfect trading opportunity.</h3>
-                    <br />
-                    <h3>No one denies his dedication or heart. He was <i>disciplined</i>, <i>smart</i>, and <i>noble</i>.</h3>
-                    <br />
-                    <h3>He ensured that his family would <u>never</u> be poor.</h3>
                     <br />
                     <h1 className="text-impact">But the clock waits for no one.</h1>
                     <br />
                     <h3>His time came, as it does for us all.</h3>
                     <br />
+                    <h3>His effort was not in vain, he ensured that his family would never be poor.</h3>
+                    <br />
                     <h3>I am grateful to him for all his sacrifices for our family.</h3>
                     <br />
-                    <h3>Yet, he traded away his golden years and missed out on the rewards for his .</h3>
+                    <h3>His effort ensured that our family would never be poor.</h3>
                     <br />
-                    <h1 className="text-impact">What if my Grandfather did not need to trade away his <b>TIME?</b></h1>
+                    <h3>Yet the cost was spending his golden years away from his family watching a screen.</h3>
                     <br />
-                    <h3>What if trading options did not require sacrificing your precious time too?</h3>
+                    <h1 className="text-impact">What if it didn't have to be this way?</h1>
                     <br />
-                    <h3>You could make your trades <b>AND</b> enjoy your time.</h3>
+                    <h3>What if trading options didn't mean sacrificing your time too?</h3>
                     <br />
-                    <h3>He was displined, smart, and stubborn.</h3>
+                    <h1>Welcome to</h1>
+                    <BannerHome />
                     <br />
-                    <h3>He made sure that his family would never be poor.</h3>
+                    <h1 className="text-impact">The ultimate options position manager.</h1>
                     <br />
-                    <h1 className="text-impact">But the clock waits for no one.</h1>
+                    <h3>A watched pot never boils.</h3>
                     <br />
-                    <h3>He made sure that his family would never be poor.</h3>
+                    <h3>Make your trade. Live your life.</h3>
+                    <br />
+                    <h3>Erabu Trades will notify you when the water is ready.</h3>
                     <br />
                     <br />
                     <br />
-                    <h1 className="text-impact"><b>My Grandfather built his legacy through options trading.</b></h1>
                     <br />
-                    <h3>He spent his retirement glued to the computer, watching and waiting.</h3>
+                    <h3>Erabu Trades will be live soon.</h3>
                     <br />
-                    <h3>Waiting for the perfect opportunity.</h3>
-                    <br />
-                    <h3>He was displined, smart, and stubborn.</h3>
-                    <br />
-                    <h3>He made sure that his family would never be poor.</h3>
-                    <br />
-                    <h1 className="text-impact">This is what <b>Erabu Trades</b> is all about.</h1>
-                    <br />
+                    <h1 className="text-impact">Subscribe now and be the first notified.</h1>
                     <br />
 
                     <BannerHome />
-                    <p>Trade your options, not your time.</p>
+                    <h4>Trade your options, not your time.</h4>
+                    <br />
                     <SubscribeComponent />
+
+
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
                 </div>
             </div >
         </div >
