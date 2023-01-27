@@ -23,16 +23,6 @@ function validateEmail(email) {
     return res;
 };
 
-
-function ThanksSection() {
-    return (
-        <div>
-            <h3>Thanks for subscribing.</h3>
-            <p>We will be in touch with the latest news.</p>
-        </div>);
-
-}
-
 function performSubscription(email, route) {
     let data = { "email": email, "route": route };
     let endpoint = "https://gw9t58i6ti.execute-api.us-east-1.amazonaws.com/erabu-add-subscription"
@@ -70,7 +60,7 @@ function SubscribeComponent(props) {
         e.preventDefault();
         performSubscription(formEmailValue, location.pathname);
         setFormEmailValue("");
-        navigate("/subscription-thanks");
+        navigate("/subscribe_thanks");
     }
 
     return (

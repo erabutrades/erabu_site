@@ -4,7 +4,7 @@
 
 .scroll-div {
   /* display: flex; */
-    height: 100%;
+  height: 100%;
   /* width: 100%; */
 }
 
@@ -25,8 +25,8 @@
 }
 
 .logo-banner {
-  max-width: 502px;
-  max-height: 280px;
+  max-width: 722px;
+  max-height: 403px;
   height: 55%;
   width: 100%;
 }
@@ -78,7 +78,8 @@
   /* position: absolute; */
   top: 50%;
   left: 50%;
-  transform: translate(+10%, 0px); /*+100px);*/
+  transform: translate(+10%, 0px);
+  /*+100px);*/
   z-index: 2;
   width: 80%;
   padding: 20px;
@@ -90,7 +91,7 @@
 
 .text-title {
   font-family: 'Cormorant Garamond';
- /* transform: scale(0.75, 1);*/
+  /* transform: scale(0.75, 1);*/
 }
 
 .text-impact {

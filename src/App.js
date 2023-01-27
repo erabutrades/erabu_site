@@ -15,6 +15,8 @@ import {
   BrowserRouter as Router,
   Outlet, Link, useRoutes, useLocation
 } from "react-router-dom";
+
+import SubscribeThanksPage from "./SubscribeThanksPage";
 import AC_Grandfather from './ac_grandfather';
 
 
@@ -26,6 +28,9 @@ function Layout() {
         <ul>
           <li>
             <Link to="/">Landing</Link>
+          </li>
+          <li>
+            <Link to="/subscribe_thanks">Subscribe Thanks</Link>
           </li>
           <li>
             <Link to="/ac_grandfather">AC Grandfather</Link>
@@ -48,10 +53,11 @@ function App() {
   const routes = [
     {
       path: '/',
-     //element: <Layout />,
+      //element: <Layout />,
       children: [
         { index: true, element: home }, // The index route defines what should be displayed nn the default route i.e. '/'
         { path: '/home', element: home },
+        { path: "/subscribe_thanks", element: <SubscribeThanksPage /> },
         //{ path: '/signup', element: <SignUpPage /> },
         //{ path: '/login', element: <LoginPage /> },
         { path: '/ac_grandfather', element: <AC_Grandfather /> },
