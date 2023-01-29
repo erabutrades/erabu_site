@@ -16,6 +16,7 @@ function AC_Grandfather() {
         navigate("/");
     }
 
+
     return (
         <div className="scroll-div">
             <div className="bg-main-long">
