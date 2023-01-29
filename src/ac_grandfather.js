@@ -47,7 +47,7 @@ function AC_Grandfather() {
                     <SubscribeComponent />
 
                     <br />
-                    <h1 className="text-impact">The Ultimate Options Position Manager</h1>
+                    <h1 className="text-impact">Low Maintenance Covered Call Positions Management</h1>
                     <br />
                     <h3>Designed to help you find profitable exits and give you back your time.</h3>
                     <br />
