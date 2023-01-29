@@ -37,7 +37,7 @@ function AC_Grandfather() {
                     <br />
                     <h3>Yet, the cost was something even more precious: time with family.</h3>
                     <br />
-                    <h1 className="text-impact">Does trading options require trading away your time too?</h1>
+                    <h1 className="text-impact">Does trading options require trading away your time?</h1>
                     <br />
                     <br />
                     <h1><b>--NOT ANYMORE--</b></h1>
