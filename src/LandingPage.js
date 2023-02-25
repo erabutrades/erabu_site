@@ -13,9 +13,12 @@ function LandingPage() {
             <div className="bg-main">
                 <div className="white-box-text">
                     <BannerHome />
-                    <h4>Trade your options, not your time.</h4>
+                    <h2>Trade your options, not your time.</h2>
                     <br />
-                    <SubscribeComponent />
+                    <h4>Erabu Trades Is Under Construction</h4>
+                    <div className="ebook-sub-btn">
+                        <SubscribeComponent overrideText="<< Get Announcements" />
+                    </div>
                 </div>
             </div >
         </div >

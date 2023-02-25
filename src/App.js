@@ -17,7 +17,8 @@ import {
 } from "react-router-dom";
 
 import SubscribeThanksPage from "./SubscribeThanksPage";
-import AC_Grandfather from './ac_grandfather';
+import StrategyGuideCC from './strategy_guide_cc';
+
 
 
 function Layout() {
@@ -33,7 +34,7 @@ function Layout() {
             <Link to="/subscribe_thanks">Subscribe Thanks</Link>
           </li>
           <li>
-            <Link to="/ac_grandfather">AC Grandfather</Link>
+            <Link to="/strategy_guide_cc">Strategy Guide CC</Link>
           </li>
         </ul>
       </nav>
@@ -60,7 +61,7 @@ function App() {
         { path: "/subscribe_thanks", element: <SubscribeThanksPage /> },
         //{ path: '/signup', element: <SignUpPage /> },
         //{ path: '/login', element: <LoginPage /> },
-        { path: '/ac_grandfather', element: <AC_Grandfather /> },
+        { path: '/strategy_guide_cc', element: <StrategyGuideCC /> },
         { path: '/*', element: home }
       ],
     },

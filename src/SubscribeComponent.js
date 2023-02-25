@@ -63,6 +63,11 @@ function SubscribeComponent(props) {
         navigate("/subscribe_thanks");
     }
 
+    let subscribeBtnText = "Subscribe";
+    if (props.overrideText) {
+        subscribeBtnText = props.overrideText;
+    }
+
     return (
         <div>
             <Form onSubmit={onFormSubmit}>
@@ -77,7 +82,7 @@ function SubscribeComponent(props) {
                         />
                     </Col>
                     <Col xs="auto">
-                        <Button type="submit" className="mb-2" disabled={!validateEmail(formEmailValue)}>Subscribe</Button>
+                        <Button type="submit" className="mb-2" disabled={!validateEmail(formEmailValue)}>{subscribeBtnText}</Button>
                     </Col>
                 </Row>
             </Form>
