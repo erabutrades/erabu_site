@@ -21,6 +21,22 @@ import StrategyGuideCC from './strategy_guide_cc';
 
 
 
+import BannerHomeInv from "./inv_banner"
+function InvBanner() {
+  return (
+    <div className="main-div">
+      <div className="bg-main">
+        <div className="white-box-text">
+          <BannerHomeInv />
+          <h4>Trade your options, not your time.</h4>
+          <br />
+        </div>
+      </div >
+    </div >
+  )
+}
+
+
 function Layout() {
   return (
     <div>
