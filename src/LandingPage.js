@@ -6,7 +6,6 @@ import logo from "./logo.png";
 import logo_banner from "./logo_banner.png";
 
 import BannerHome from "./BannerHome"
-import BannerHomeInv from "./BannerHome"
 
 function LandingPage() {
     return (

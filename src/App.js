@@ -20,6 +20,22 @@ import SubscribeThanksPage from "./SubscribeThanksPage";
 import AC_Grandfather from './ac_grandfather';
 
 
+import BannerHomeInv from "./inv_banner"
+function InvBanner() {
+  return (
+    <div className="main-div">
+      <div className="bg-main">
+        <div className="white-box-text">
+          <BannerHomeInv />
+          <h4>Trade your options, not your time.</h4>
+          <br />
+        </div>
+      </div >
+    </div >
+  )
+}
+
+
 function Layout() {
   return (
     <div>
@@ -61,6 +77,7 @@ function App() {
         //{ path: '/signup', element: <SignUpPage /> },
         //{ path: '/login', element: <LoginPage /> },
         { path: '/ac_grandfather', element: <AC_Grandfather /> },
+        { path: '/inv_banner', element: <BannerHomeInv /> },
         { path: '/*', element: home }
       ],
     },
