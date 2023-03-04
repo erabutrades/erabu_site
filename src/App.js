@@ -18,7 +18,7 @@ import {
 
 import SubscribeThanksPage from "./SubscribeThanksPage";
 import StrategyGuideCC from './strategy_guide_cc';
-
+import ACWatchedPot30 from "./ac_watched_pot_30"
 
 
 import BannerHomeInv from "./inv_banner"
@@ -65,7 +65,7 @@ function Layout() {
 
 function App() {
 
-  const home = <LandingPage />;
+  const home = <StrategyGuideCC />;
 
   const routes = [
     {
@@ -78,6 +78,7 @@ function App() {
         //{ path: '/signup', element: <SignUpPage /> },
         //{ path: '/login', element: <LoginPage /> },
         { path: '/strategy_guide_cc', element: <StrategyGuideCC /> },
+        { path: '/ac_watched_pot_30', element: <ACWatchedPot30 /> },
         { path: '/*', element: home }
       ],
     },

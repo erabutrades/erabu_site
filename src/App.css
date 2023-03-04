@@ -91,6 +91,37 @@
   width: 100%
 }
 
+
+
+.ac-header-container {
+  position: absolute;
+  top: 50px;
+  left: 400px;
+  right: 400px;
+  font-family: 'Cormorant Garamond';
+  color: white;
+  text-align: center;
+}
+
+.ac-header-container-text {
+  transform: scale(1.5, 1.5);
+}
+
+.ac-body {
+  margin-left: 300px;
+  margin-right: 300px;
+  font-family: 'Open Sans';
+  color: white;
+  text-align: left;
+  position: relative;
+}
+
+.ac-text-centered {
+  text-align: center;
+  position: relative;
+}
+
+
 .logo-header {
   height: 200px;
   width: 200px;
