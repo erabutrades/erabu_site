@@ -19,6 +19,7 @@ import {
 import SubscribeThanksPage from "./SubscribeThanksPage";
 import StrategyGuideCC from './strategy_guide_cc';
 import ACWatchedPot30 from "./ac_watched_pot_30"
+import ACWatchedPot60 from "./ac_watched_pot_60"
 
 
 import BannerHomeInv from "./inv_banner"
@@ -79,6 +80,7 @@ function App() {
         //{ path: '/login', element: <LoginPage /> },
         { path: '/strategy_guide_cc', element: <StrategyGuideCC /> },
         { path: '/ac_watched_pot_30', element: <ACWatchedPot30 /> },
+        { path: '/ac_watched_pot_60', element: <ACWatchedPot60 /> },
         { path: '/*', element: home }
       ],
     },
