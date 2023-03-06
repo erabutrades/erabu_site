@@ -68,9 +68,12 @@ function ACWatchedPot60() {
                     <br />
 
                     <br />
+                    <hr></hr>
                     <br />
 
-                    <h2>The old saying <i>a watched pot never boils</i> is truer than ever.</h2>
+                    <h2>As the saying goes:</h2>
+                    <br />
+                    <h1><b>A watched pot never boils.</b></h1>
                     <br />
                     <h2><b>TIME</b> is your most valuable asset.</h2>
                     <br />
@@ -105,10 +108,11 @@ function ACWatchedPot60() {
                     </ul>
                     <br />
                     <br />
-                    <h2>Somedays it seems like</h2>
+                    <h2>Some days it seems like</h2>
                     <br /><br />
                     <h1 className="ac-text-centered"><b>Options trading requires just as much effort as day trading.</b></h1>
                     <br /><br />
+
                     <h2>This is not the dream retirement you pictured.</h2>
                     <br />
                     <h2>Being indentured to the computer screen is no different than having a day job.</h2>
@@ -124,7 +128,7 @@ function ACWatchedPot60() {
                         <li><h2>Automate the calculations</h2></li>
                     </ul>
                     <br />
-                    <h2>You need a degree in analytics and computer science to make sense of it all.</h2>
+                    <h2>Even if you have a degree in analytics and computer science this is a tall order.</h2>
                     <br />
                     <h2>To be clear, they are not wrong. This is all good advice.</h2>
                     <br />
@@ -134,51 +138,59 @@ function ACWatchedPot60() {
                     <br /><br />
 
 
-                    <h2>Mastering option trading requires years of effort.</h2>
+                    <h2>Learning to manage option trading requires years of effort.</h2>
                     <br />
                     <h2>Knowing this, most people would just give up.</h2>
                     <br />
                     <h2>And they would be rational and justified in doing so.</h2>
                     <br />
-                    <h2>Had I known this so many years ago, I might have given up too.</h2>
+                    <h2>Had we of known this so many years ago, we might have given up too.</h2>
                     <br />
-                    <h2>But I was young, driven, optimistic, and I had a degree in computer science.</h2>
+                    <h2>But we were driven, optimistic, and had degrees in computer science.</h2>
                     <br /><br />
-                    <h1 className="ac-text-centered"><b>Everything I needed was right in front of me, I just had to spend the time to put the pieces all together.</b></h1>
+                    <h1 className="ac-text-centered"><b>Everything we needed was right in front of us.</b></h1>
+                    <br />
+                    <h1 className="ac-text-centered"><b>We just had to spend the time to put the pieces all together.</b></h1>
                     <br /><br />
-                    <h2>I invested my time and made the trade for knowledge.</h2>
+                    <h2>We had no idea the depths of the rabbit hole we were exploring.</h2>
                     <br />
-                    <h2>Years and years, I spent studying statistics, option trading, and making trades myself.</h2>
+                    <h2>Years and years, we spent studying statistics, option trading, and making trades ourselves.</h2>
                     <br />
-                    <h2>I followed this rabbit hole to the end and discovered several things I never would have expected.</h2>
+                    <h2>In the process we discovered several things we never would have expected.</h2>
                     <br />
-                    <h2>Now I wish to share this knowledge with you.</h2>
+                    <h2>It took a long time, maybe too long.</h2>
                     <br />
-                    <h2>Your time is precious. You’ve already spent years building your trading skill.</h2>
+                    <h2>But now we are here and we want to share this hard won knowledge with you.</h2>
+                    <br />
+                    <h2>Time is precious.</h2>
+                    <br />
+                    <h2>You’ve already spent years building your trading skill.</h2>
                     <br />
                     <h2>You should not be trading away any more time.</h2>
                     <br />
                     <h2>Your time is more and more valuable.</h2>
                     <br />
-                    <h2>Trading time away leads to diminishing returns.</h2>
+                    <h2>And trading time away leads to diminishing returns.</h2>
                     <br />
 
 
                     <h1 className="ac-text-centered"><b>There is no time to lose!</b></h1>
                     <br />
-                    <h2>Trading options is no exception.</h2>
+                    <h2>Trading options is not terribly complicated. Plus it is profitable.</h2>
+                    <br />
+                    <h2>But there is immense effort involved.</h2>
                     <br />
                     <h2>It steals your time away.</h2>
                     <br />
-                    <h2>But it could be as simple as just a few minutes each day</h2>
+                    <h2>Yet, it could be as simple as just a few minutes each day</h2>
                     <br />
-                    <h2>I know for a fact that this is possible.</h2>
+                    <h2>We know for a fact that this is possible.</h2>
                     <br />
                     <h2>How?</h2>
                     <br />
-                    <h2>Because I have been trading options this way for years.</h2>
+                    <h2>Because we have been trading options this way for years.</h2>
                     <br />
-                    <h2>I am serious about this.</h2>
+                    <h2>We are serious about this.</h2>
                     <br />
                     <h1 className="ac-text-centered"><b>Trading Options can be that simple.</b></h1>
                     <br />
@@ -212,16 +224,14 @@ function ACWatchedPot60() {
                         <li><h2>80% of shots scored in basketball are made by 20% of the players</h2></li>
                         <li><h2>The top 20% of popular songs are played 80% of the time</h2></li>
                         <li><h2>20% of people hold 80% of the wealth</h2></li>
-                        <li><h2>80% of sales come from 20% of clients</h2></li>
                         <li><h2>You wear 20% of your clothes 80% of the time</h2></li>
-                        <li><h2>80% of the population lives in 20% of the cities</h2></li>
                     </ul>
                     <br />
                     <h2>This is a brutal principle and a reminder of how the world actually works.</h2>
                     <br />
                     <h2>Not everything in life follows this rule, but you would be surprised how many things do.</h2>
                     <br />
-                    <h2>If you apply it properly you can optimize important aspects of your life.</h2>
+                    <h2>If you apply it properly, you can optimize important aspects of your life.</h2>
                     <br />
                     <h2>As time marches on, the value of it goes up due to diminishing quantity.</h2>
                     <br /><br />
@@ -237,6 +247,8 @@ function ACWatchedPot60() {
                     <h2>Let’s think how we can apply this concept to our trades.</h2>
                     <br />
                     <h2>Remember the rule of 80/20.</h2>
+                    <br />
+                    <h2>When applied to the trade outcomes we noticed that:</h2>
                     <br />
                     <h2>20% of your trades account for 80% of your profits.</h2>
                     <br />
@@ -254,37 +266,48 @@ function ACWatchedPot60() {
                     <h1 className="ac-text-centered"><b>But every now and then you hit a home run. That’s the 20%.</b></h1>
                     <br />
                     <br />
-                    <h2>Now we are getting to the golden nugget of wisdom that I discovered during my journey into options trading.</h2>
+                    <h2>But then we took it one step farther than anyone had done before.</h2>
+                    <br />
+                    <h2>This is the golden nugget of wisdom that we discovered during our journey into options trading.</h2>
+                    <br />
+                    <h2>This was the result we did not expect.</h2>
                     <br />
                     <h2>It started with an observation, and then a question.</h2>
                     <br />
-                    <h2>I observed that 80% of the time spent trading options was spent on just finding and validating which options to trade.</h2>
+                    <h2>We observed that: </h2>
                     <br />
-                    <h2>Only 20% of the time is actually spent performing the trades and exiting.</h2>
+                    <br />
+                    <h1 className="ac-text-centered"><b>80% of the time spent trading options was just</b></h1>
+                    <h1 className="ac-text-centered"><b>finding and validating which options to trade.</b></h1>
+                    <br />
+                    <h1 className="ac-text-centered"><b>Only 20% of the time is actually spent performing the trades.</b></h1>
+                    <br />
                     <br />
                     <h2>In fact, it’s more like 90/10.</h2>
                     <br />
                     <br />
-                    <h1 className="ac-text-centered"><b>Almost all the time trading options is trying to find the entries and exits.</b></h1>
+                    <h1 className="ac-text-centered"><b>Almost ALL the time trading options is finding the entries and exits.</b></h1>
                     <br />
                     <br />
-                    <h2>Then it hit me! What if I focused on streamlining that tedious process?</h2>
+                    <h2>At that moment we realized something incredible.</h2>
                     <br />
-                    <h2>By targeting that specific component, I could make trading options break out of the cycle of the Pareto Principle.</h2>
+                    <h2>What if we focused on streamlining that tedious process?</h2>
                     <br />
-                    <h2>I could free up to 80-90% of the time.</h2>
+                    <h2>By targeting that specific component, we could make trading options break out of the cycle of the Pareto Principle.</h2>
                     <br />
-                    <h2>But how did I actually achieve this goal?</h2>
+                    <h1 className="ac-text-centered"><b>We could free up to 80-90% of the time.</b></h1>
+                    <br />
+                    <h2>But how did we actually achieve this goal?</h2>
                     <br />
                     <h2>It sounds good in theory, but can it be done in practice?</h2>
                     <br />
-                    <h2>At this point my head was spinning with ideas.</h2>
+                    <h2>At this point our heads were spinning with ideas.</h2>
                     <br />
-                    <h2>So, I sat down and went to work.</h2>
+                    <h2>So, we sat down and went to work.</h2>
                     <br />
-                    <h2>I relied on my extensive experience developing software & doing process optimization.</h2>
+                    <h2>We relied on our extensive experience developing software & doing process optimization.</h2>
                     <br />
-                    <h2>I chipped away at the problem, until I arrived at a solution.</h2>
+                    <h2>We chipped away at the problem, until we arrived at a solution.</h2>
                     <div className="ac-text-centered">
                         <BannerHome />
                     </div>
@@ -296,13 +319,13 @@ function ACWatchedPot60() {
                     <br />
                     <br />
                     <h2>Erabu Trades has isolated the most tedious and time intensive part of trading options:</h2>
-                    <h2 className="ac-text-centered">Searching, Tracking, & Notifying</h2>
+                    <h2 className="ac-text-centered">Searching, Tracking, & Notifying.</h2>
                     <br />
                     <h2>Then on top of that we automated everything and made it user friendly.</h2>
                     <br />
                     <h2>The heart and soul of Erabu Trades is the intelligent formulas combined with automation.</h2>
                     <br />
-                    <h2>By applying your positions and targets</h2>
+                    <h2>By applying your positions and targets:</h2>
                     <br />
                     <br />
                     <h1 className="ac-text-centered"><b>Erabu Trades smart formulas will take care of the 80% for you.</b></h1>
@@ -355,11 +378,17 @@ function ACWatchedPot60() {
                     <br />
                     <h2>Just a few minutes at most will do.</h2>
                     <br />
+                    <h2>This will save you hours:</h2>
+                    <br />
+                    <br />
+                    <h1 className="ac-text-centered"><b>EVERY&nbsp;&nbsp;&nbsp;&nbsp;SINGLE&nbsp;&nbsp;&nbsp;&nbsp;WEEK</b></h1>
+                    <br />
+                    <br />
                     <h2>And our aim is for you to only visit the site when there is actionable information.</h2>
                     <br />
                     <h2>So much of trading is waiting.</h2>
                     <br />
-                    <h2>If there is nothing to do right now, then we do NOT want to bother you.</h2>
+                    <h2>If there is nothing to do right now, then <b>we do NOT want to bother you</b>.</h2>
                     <br />
                     <br />
                     <h1 className="ac-text-centered"><b>Erabu Trades is built different.</b></h1>
@@ -373,7 +402,7 @@ function ACWatchedPot60() {
                     <br />
                     <h2>They hope you won’t notice that learning to use their service is just as time intensive as trading itself.</h2>
                     <br />
-                    <h2>They design their service to make you spend as much time as possible on their site, because they built their revenue system around that.</h2>
+                    <h2>They design their service to make you spend as much time as possible on their site because they built their revenue system around that.</h2>
                     <br />
                     <h2>They want you ‘dependent’ on their tools.</h2>
                     <br />
@@ -381,7 +410,7 @@ function ACWatchedPot60() {
                     <br />
                     <h2>That is why you will not see something like Erabu Trades anywhere else.</h2>
                     <br />
-                    <h2>These other sites cannot afford to put out a feature that saves you time, because they fear helping you spend less time trading.</h2>
+                    <h2>These other sites cannot afford to put out a feature that saves you time because they fear helping you spend less time trading.</h2>
                     <br />
                     <h2>Not even to mention most of the tools are so generic to serve a vague mass-market that they end up not being useful to anyone.</h2>
                     <br />
